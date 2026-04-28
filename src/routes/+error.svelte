@@ -15,20 +15,20 @@
             The path <code>{page.url.pathname}</code> could not be found.
         </p>
         <p class="quote">
-            “Even in failure, there is clarity.”<br />
-            <span>– Inspired by *bushidō* (誠 – Sincerity)</span>
+            “PLease try and reconnect to your internet”<br />
+            <span>–</span>
         </p>
     {:else if error}
         <p class="message">{error.message}</p>
         <p class="quote">
-            “When the unexpected arises, meet it with calm.”<br />
-            <span>– Inspired by *ninshiki* (忍識 – Awareness)</span>
+            “Please try again”<br />
+            <span>– </span>
         </p>
     {:else}
         <p class="message">An unknown error occurred. Please try again.</p>
         <p class="quote">
-            “The obstacle is the path.”<br />
-            <span>– Zen proverb</span>
+            “An unknown error has occured please wait until we fix this problem.”<br />
+            <span>–</span>
         </p>
     {/if}
 
