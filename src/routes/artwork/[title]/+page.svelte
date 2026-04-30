@@ -3,8 +3,8 @@
     import { fade } from 'svelte/transition';
     import { resolve, asset } from '$app/paths';
 	import { goto } from '$app/navigation';
-	import { catalogue } from '$lib/stores';
-	import { CatalogueCard } from '$lib/components';
+	import { artwork } from '$lib/stores';
+	import { ArtworkCard } from '$lib/components';
 
     // `data` is automatically provided by the load function from +page.js
     export let data;
@@ -20,23 +20,23 @@
 	$: { // Look up related items
 		const itemTags = new Set((item.tags || []).map(tag => tag.toLowerCase()));
 
-		relatedItems = $catalogue.filter(other => 
+		relatedItems = $artwork.filter(other => 
 		{ // Filter out the current item
 			if (other.id === item.id) return false;
-			// Check if they share the same category
-			const sameCategory = other.category === item.category;
+			// Check if they share the same artwork
+			const sameartwork = other.artwork === item.artwork;
 			// Check if they share any tags
 			const otherTags = new Set((other.tags || []).map(tag => tag.toLowerCase()));
 			const sharedTags = [...itemTags].some(tag => otherTags.has(tag));
-			// Return true if they share the same category or any tags
-			return sameCategory || sharedTags;
+			// Return true if they share the same artwork or any tags
+			return sameartwork || sharedTags;
 		}).slice(0, 3); // Show max 3 related
 	}
 </script>
 
 
 <svelte:head>
-	<title>{item.title} | Catalogue</title>
+	<title>{item.title} | Artwork</title>
 </svelte:head>
 
 
@@ -45,7 +45,7 @@
 		<img class="hero-image" src={asset(item.image)} alt={`Image for ${item.title}`} />
 
 		<h1>{item.title}</h1>
-		<p class="category">{item.category}</p>
+		<p class="artwork">{item.artwork}</p>
 		<p class="description">{item.description}</p>
 
 		{#if item.tags.length}
@@ -67,14 +67,14 @@
 					<button
 						type="button"
 						class="card-button"
-						on:click={() => goto(resolve('/catalogue/[title]', { title: item.title }))}
+						on:click={() => goto(resolve('/artwork/[title]', { title: item.title }))}
 						aria-label={`View details for ${item.title}`}
 					>
-						<CatalogueCard
+						<ArtworkCard
 							title={item.title}
 							description={item.description}
 							image={item.image}
-							category={item.category}
+							artwork={item.artwork}
 							tags={item.tags}
                         	animationDelay={index * 100}
 						/>
@@ -93,7 +93,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		background-image: url('/images/backgrounds/kanji-grid.png');
+		/*background-image: url('/images/backgrounds/kanji-grid.png');*/
         background-size: 200px;
         background-repeat: repeat;
         background-color: rgba(255, 255, 255, 0.85);
@@ -123,7 +123,7 @@
 		line-height: 1.2;
 	}
 
-	.category {
+	.artwork {
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
@@ -159,7 +159,7 @@
 	.related {
 		margin-top: var(--space-xl);
 		padding: var(--space-lg) var(--space-md);
-		background-image: url('/images/backgrounds/rice-texture.png');
+		/*background-image: url('/images/backgrounds/rice-texture.png');*/
         background-size: 800px;
         background-repeat: repeat;
         background-color: rgba(255, 255, 255, 0.85);

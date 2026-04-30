@@ -7,29 +7,21 @@
 :root {
     /* ========== Colour Palette ========== */
     /* Primary Earth-Inspired Colours */
-    --color-primary: #084c96;    /* Stone (primary UI colour) */
-    --color-secondary: #1379b5;  /* Sand (backgrounds, inputs) */
-    --color-tertiary: #4b1dae;   /* Clay (surface neutral) */
+    
+   
 
     /* Accent & Feedback Colours */
-    --color-accent: #588157;     /* Moss Green (buttons, links) */
-    --color-highlight: #f4a261;  /* Warm Orange (attention, highlights) */
-    --color-success: #81b29a;    /* Soft Jade */
-    --color-warning: #f2cc8f;    /* Honey Beige */
-    --color-error: #e76f51;      /* Terracotta Red */
+   
 
     /* Neutral Greys for Text and UI */
-    --text-primary: #1e1e1e;      /* Main text */
-    --text-secondary: #444444;   /* UI, subtitles */
-    --text-tertiary: #777777;    /* Placeholder or muted text */
-    --text-contrast: #ffffff;    /* Light text on dark backgrounds */
+  
 
     /* Backgrounds & Surfaces */
-    --color-background: #332ff8; /* Light parchment background */
-    --color-surface: #384ce2;    /* Panels, cards */
-    --color-border: #241bab;     /* Subtle earthy border */
+   
+
     --color-overlay: rgba(0, 0, 0, 0.25);
-    --color-code-bg: #213399;
+
+    background-image: url("/images/backgrounds/background.jpg");
 
     /* Interactive States */
     --color-border-hover: var(--color-accent);

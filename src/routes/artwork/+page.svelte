@@ -2,25 +2,18 @@
     import { fade } from 'svelte/transition';
     import { resolve } from '$app/paths';
 	import { goto } from '$app/navigation';
-	import { catalogue, categories, tags } from '$lib/stores';
-	import { CatalogueCard } from '$lib/components';
+	import { artwork, categories, tags } from '$lib/stores';
+	import { ArtworkCard } from '$lib/components';
 
 	let search = '';
 	let selectedTag = 'all';
 	let sortBy = 'title';
 
 
-	function resetFilters() {
-		search = '';
-		selectedTag = 'all';
-		sortBy = 'title';
-	}
-
-
 	$: isFiltered = search || selectedTag !== 'all' || sortBy !== 'title';
 
-	// Reactive filtered + sorted catalogue
-	$: filteredCatalogue = $catalogue
+	// Reactive filtered + sorted artwork
+	$: filteredArtwork = $artwork
 		.filter(item => {
 			const matchesTag = selectedTag === 'all' || item.tags?.includes(selectedTag);
 			const matchesSearch = item.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -29,75 +22,40 @@
 		})
 		.sort((a, b) => {
 			if (sortBy === 'title') return a.title.localeCompare(b.title);
-			if (sortBy === 'category') return a.category.localeCompare(b.category);
+			if (sortBy === 'artwork') return a.artwork.localeCompare(b.artwork);
 			return 0;
 		});
 
     // Reactive hash to force re-animation
-	$: animationKey = `${search}-${selectedTag}-${sortBy}-${filteredCatalogue.map(i => i.id).join(',')}`;
+	$: animationKey = `${search}-${selectedTag}-${sortBy}-${filteredArtwork.map(i => i.id).join(',')}`;
 </script>
 
 
 <svelte:head>
-    <title>Catalogue | Starter Kit</title>
+    <title>Artwork | Starter Kit</title>
 </svelte:head>
 
 
-<section class="catalogue-wrapper">
-	<div class="catalogue-heading-wrapper">
-		<h1 class="catalogue-heading">Catalogue</h1>
+<section class="artwork-wrapper">
+	<div class="artwork-heading-wrapper">
+		<h1 class="artwork-heading">Artwork Portfolio</h1>
 	</div>
 
-	<div class="controls">
-		<label class="search-input">
-			<span role="img" aria-label="Search">🔍</span>
-			<input
-				type="text"
-				bind:value={search}
-				placeholder="Search catalogue..."
-				aria-label="Search catalogue"
-			/>
-		</label>
-
-		<label class="tag-select">
-			<span role="img" aria-label="Filter">🏷️</span>
-			<select bind:value={selectedTag} aria-label="Filter by tag">
-				<option value="all">All Tags</option>
-				{#each $tags as tag}
-					<option value={tag}>{tag}</option>
-				{/each}
-			</select>
-		</label>
-
-		<label class="sort-select">
-			<span role="img" aria-label="Sort">⇅</span>
-			<select bind:value={sortBy} aria-label="Sort by">
-				<option value="title">Sort by Title</option>
-				<option value="category">Sort by Category</option>
-			</select>
-		</label>
-
-		{#if isFiltered}
-			<button class="reset-button" on:click={resetFilters}>
-				✖ Reset
-			</button>
-		{/if}
-	</div>
-
-    <div class="grid" class:narrow={filteredCatalogue.length <= 2}>
-		{#if filteredCatalogue.length > 0}
-            {#each filteredCatalogue as item, index (animationKey + '-' + item.id)}
+	
+    <div class="grid" class:narrow={filteredArtwork.length <= 2}>
+		{#if filteredArtwork.length > 0}
+            {#each filteredArtwork as item, index (animationKey + '-' + item.id)}
                 <button
 					type="button"
 					class="card-button"
-					on:click={() => goto(resolve('/catalogue/[title]', { title: item.title }))}
+					on:click={() => goto(resolve('/artwork/[title]', { title: item.title }))}
 					aria-label={`View details for ${item.title}`}
 				>
-                    <CatalogueCard
+                    <ArtworkCard
                         title={item.title}
                         description={item.description}
                         image={item.image}
-                        category={item.category}
+                        artwork={item.artwork}
                         tags={item.tags}
                         animationDelay={index * 80}
                     />
@@ -111,14 +69,14 @@
 
 
 <style>
-	.catalogue-wrapper {
+	.artwork-wrapper {
         width: 100%;
         margin: 0 auto;
         padding: 0;
     }
 
-    .catalogue-heading-wrapper {
-        background-image: url('/images/backgrounds/scroll-teaser.png');
+    .artwork-heading-wrapper {
+       /* background-image: url('/images/backgrounds/scroll-teaser.png');*/
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -130,14 +88,14 @@
         margin-bottom: var(--space-lg);
     }
 
-    .catalogue-heading {
+    .artwork-heading {
         font-family: var(--font-heading);
         font-size: var(--font-xxl);
         position: relative;
         color: var(--text-primary);
     }
 
-    .catalogue-heading::after {
+    .artwork-heading::after {
         content: "";
         display: block;
         width: 80px;
@@ -178,21 +136,6 @@
         font-size: var(--font-base);
         padding: var(--space-xs) var(--space-sm);
         width: 100%;
-    }
-
-    .reset-button {
-        background-color: var(--color-accent);
-        color: var(--text-contrast);
-        border: none;
-        border-radius: var(--radius-sm);
-        padding: var(--space-xs) var(--space-md);
-        cursor: pointer;
-        font-size: var(--font-sm);
-        transition: background-color var(--transition-fast);
-    }
-
-    .reset-button:hover {
-        background-color: var(--color-primary);
     }
 
     .grid {

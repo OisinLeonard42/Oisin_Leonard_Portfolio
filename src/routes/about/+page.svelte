@@ -29,7 +29,7 @@
 
 
 <svelte:head>
-    <title>About | Starter Kit</title>
+    <title>About | Oisin Leonard Portfolio</title>
 </svelte:head>
 
 
@@ -128,7 +128,7 @@
 
     /* Section: Hero */
     .section-hero {
-        background-image: url("/images/backgrounds/bamboo-enso-hero.png");
+       /* background-image: url("/images/backgrounds/bamboo-enso-hero.png");*/
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -138,7 +138,7 @@
 
     /* Section: Shinobi Principles */
     .section-shinobi {
-        background-image: url("/images/backgrounds/kanji-grid.png");
+        /*background-image: url("/images/backgrounds/kanji-grid.png");*/
         background-size: 650px;
         background-repeat: repeat;
         opacity: 0.95;
@@ -146,7 +146,7 @@
 
     /* Section: Bushidō Virtues */
     .section-bushido {
-        background-image: url("/images/backgrounds/parchment-scroll.png");
+        /*background-image: url("/images/backgrounds/parchment-scroll.png");*/
         background-size: 650px;
         background-repeat: repeat;
         opacity: 0.95;
@@ -154,7 +154,7 @@
 
     /* Section: Gallery */
     .section-gallery {
-        background-image: url("/images/backgrounds/rice-texture.png");
+        /*background-image: url("/images/backgrounds/rice-texture.png");*/
         background-size: 800px;
         background-repeat: repeat;
         background-position: bottom center;
@@ -163,7 +163,7 @@
 
     /* Section: Quote or Reflection */
     .section-quote {
-		background-image: url("/images/backgrounds/zen-garden-ripples.png");
+		/*background-image: url("/images/backgrounds/zen-garden-ripples.png");*/
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;

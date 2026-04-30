@@ -15,7 +15,7 @@ export async function entries() {
 		{ title: "Honor Code Exercise" },
 		{ title: "Gratitude Bow Practice" },
 		{ title: "Tea Ceremony Lite" }
-		// Add all valid catalogue IDs here
+		// Add all valid artwork IDs here
 	];
 }
 

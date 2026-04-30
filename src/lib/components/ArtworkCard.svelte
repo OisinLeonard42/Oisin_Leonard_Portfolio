@@ -3,8 +3,8 @@
 
     export let title = 'Untitled';
     export let description = 'No description provided.';
-    export let image = '/images/catalogue/placeholder.jpg';
-    export let category = 'Uncategorised';
+    export let image = '/images/artwork/placeholder.jpg';
+    export let artwork = 'Uncategorised';
     /** @type {string | any[]} */
     export let tags = [];
     export let animationDelay = 0;
@@ -21,7 +21,7 @@
 
     <div class="content">
         <h2>{title}</h2>
-        <p class="category">{category}</p>
+        <p class="artwork">{artwork}</p>
 
         <p class="description">
             {#if expanded || !isLong}
@@ -97,7 +97,7 @@
         color: var(--text-primary);
     }
 
-    .category {
+    .artwork {
         font-size: var(--font-sm);
         color: var(--text-secondary);
         font-style: italic;
