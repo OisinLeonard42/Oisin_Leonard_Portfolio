@@ -9,6 +9,11 @@
 	let selectedTag = 'all';
 	let sortBy = 'title';
 
+    function resetFilters() {
+		search = '';
+		selectedTag = 'all';
+		sortBy = 'title';
+	}
 
 	$: isFiltered = search || selectedTag !== 'all' || sortBy !== 'title';
 
@@ -40,7 +45,6 @@
 	<div class="artwork-heading-wrapper">
 		<h1 class="artwork-heading">Artwork Portfolio</h1>
 	</div>
-
 	
     <div class="grid" class:narrow={filteredArtwork.length <= 2}>
 		{#if filteredArtwork.length > 0}
@@ -105,38 +109,6 @@
         border-radius: var(--radius-sm);
     }
 
-    .controls {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: var(--space-md);
-        margin-bottom: var(--space-lg);
-    }
-
-    .controls label {
-        display: flex;
-        align-items: center;
-        gap: var(--space-xs);
-        background-color: var(--color-surface);
-        padding: var(--space-xs) var(--space-sm);
-        border: var(--border-default);
-        border-radius: var(--radius-sm);
-        box-shadow: var(--shadow-sm);
-        transition: box-shadow var(--transition-fast);
-    }
-
-    .controls input,
-    .controls select {
-        background: transparent;
-        border: none;
-        outline: none;
-        font-family: var(--font-body);
-        color: var(--text-primary);
-        font-size: var(--font-base);
-        padding: var(--space-xs) var(--space-sm);
-        width: 100%;
-    }
 
     .grid {
 		display: grid;
@@ -170,16 +142,4 @@
 		outline-offset: 4px;
 	}
 
-    @media (max-width: 640px) {
-        .controls {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        .grid {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-lg);
-        }
-    }
 </style>
