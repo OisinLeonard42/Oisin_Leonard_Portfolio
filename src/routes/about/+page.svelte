@@ -12,12 +12,25 @@
 <section class="intro section-hero">
     <h1>About Me section</h1>
     <p>
-       This website is a Portfolio website of all the artworks and other projects I have made throughout the year. 
+       This website is a Portfolio website of all the artworks and other projects I have made throughout the year.,
+       This part of the website is about me and why I decided to design this website and why I would be qualitied for a job working for you.
+    </p>
+    <p>
+        My Achievements are:
+     </p>
+     <p>
+      Completeing my four years of collage from my IDAD course.
+<p>
+Some of my work was used in a game project for the fourth years in there final project.
+I have had some work experience in computer repair as well as digital art.
     </p>
 </section>
 
 <section class="gallery section-gallery">
-    <h2>Philosophical Inspirations</h2>
+    <h2>C.V. Showcase</h2>
+    <p>
+        Here is a showcase of my C.V.s 
+    </p>
     <div class="grid">
         <figure>
             <img src={asset("/images/about/shrine.png")} alt="Mountain Shrine at Dawn" />
@@ -47,7 +60,7 @@
 		<h2 id="reflection-title">Reflections</h2>
 		<blockquote>
 			<p>
-				“He who conquers himself is the mightiest warrior.”
+				
 			</p>
 			<footer>— Confucius</footer>
 		</blockquote>

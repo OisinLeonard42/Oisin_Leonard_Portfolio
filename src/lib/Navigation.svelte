@@ -6,7 +6,7 @@
     const navigationItems = [
         { name: 'Home', path: '/' },
         { name: 'Artwork', path: '/artwork' },
-        { name: 'About', path: '/about' }
+        { name: 'About Me', path: '/about' }
     ];
 
     let isOpen = false;

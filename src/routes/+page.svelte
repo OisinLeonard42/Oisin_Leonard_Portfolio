@@ -31,13 +31,10 @@
 <div class="home-container">
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Live Mindfully. Learn Purposefully.</h1>
+        <h1>Welcome to Oisin Leonard Portfolio Page</h1>
         <p class="subheading">
-            Inspired by the 7 Virtues of Bushidō and the 11 Principles of the Shinobi.
+          This Portfolio Website will show you what I have made through my second semester of collage and it is also my final project for this semester.
         </p>
-        <button class="inspire-button" on:click={openQuoteModal}>
-            Find Inspiration
-        </button>
     </section>
 
     <!-- Featured Catalogue Section -->
@@ -55,25 +52,16 @@
                         title={item.title}
                         description={item.description}
                         image={item.image}
-                        artwork={item.category}
-                        tags={item.tags}
                         animationDelay={index * 80}
                     />
                 </button>
             {/each}
         </div>
-        <a class="browse-link" href="{resolve('/artwork')}">Browse Full Catalogue →</a>
+        <a class="browse-link" href="{resolve('/artwork')}">Browse Full Portfolio →</a>
     </section>
 
     <!-- About Teaser Section -->
-    <section class="about-teaser">
-        <h2>Why This Matters</h2>
-        <p>
-            This project blends timeless wisdom with modern habits — from Stoic journaling to Shinobi adaptability.
-            Whether you seek health, discipline, or mindfulness, our tools are here to guide you.
-        </p>
-        <a href="{resolve('/about')}" class="learn-more">Learn more →</a>
-    </section>
+
 
     <!-- Quote Modal -->
     <Modal
