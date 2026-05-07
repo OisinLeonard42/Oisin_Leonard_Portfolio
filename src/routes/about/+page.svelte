@@ -20,6 +20,7 @@
      </p>
      <p>
       Completeing my four years of collage from my IDAD course.
+      </p>
 <p>
 Some of my work was used in a game project for the fourth years in there final project.
 I have had some work experience in computer repair as well as digital art.
@@ -29,44 +30,15 @@ I have had some work experience in computer repair as well as digital art.
 <section class="gallery section-gallery">
     <h2>C.V. Showcase</h2>
     <p>
-        Here is a showcase of my C.V.s 
+        Here is a showcase of my C.V. 
     </p>
     <div class="grid">
         <figure>
-            <img src={asset("/images/about/shrine.png")} alt="Mountain Shrine at Dawn" />
-            <figcaption>
-                A mountain shrine illuminated by dawn — symbolising spiritual focus and clarity of purpose.
-            </figcaption>
-        </figure>
-
-        <figure>
-            <img src={asset("/images/about/samurai.png")} alt="Samurai in Silhouette against Setting Sun" />
-            <figcaption>
-                A lone samurai silhouetted at sunset — reflecting discipline, solitude, and the inner path of virtue.
-            </figcaption>
-        </figure>
-
-        <figure>
-            <img src={asset("/images/about/bamboo.png")} alt="Tranquil Path through Bamboo Forest" />
-            <figcaption>
-                A winding path through bamboo — evoking balance, flexibility, and quiet persistence.
-            </figcaption>
+            <img src={asset("static/images/about/Oisίn Leonard CV Ballylynan.pdf")} />
+      
         </figure>
     </div>
 </section>
-
-<section class="reflection section-quote" aria-labelledby="reflection-title">
-	<div class="container">
-		<h2 id="reflection-title">Reflections</h2>
-		<blockquote>
-			<p>
-				
-			</p>
-			<footer>— Confucius</footer>
-		</blockquote>
-	</div>
-</section>
-
 
 <style>
     section {
@@ -192,14 +164,7 @@ I have had some work experience in computer repair as well as digital art.
         display: block;
     }
 
-    figcaption {
-        padding: var(--space-sm);
-        font-size: var(--font-sm);
-        color: var(--text-secondary);
-        text-align: center;
-        background: var(--color-surface);
-        font-style: italic;
-    }
+   
 
     /* Animations */
     @keyframes fadeIn {

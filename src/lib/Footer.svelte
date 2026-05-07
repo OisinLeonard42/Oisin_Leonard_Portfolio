@@ -1,5 +1,5 @@
 <footer class="footer">
-    <img src="TaskBar.png" alt="footer">
+    <img src="/images/backgrounds/TaskBar.png" alt="footer">
 </footer>
 
 
@@ -7,6 +7,7 @@
     .footer {
         width: 100%;
         padding: var(--space-md);
+        object-fit: fill; 
         text-align: center;
         font-family: var(--font-body);
         font-size: var(--font-sm);
@@ -23,9 +24,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 3px;
-        width: 100%;
-      
         animation: gradientScroll 6s linear infinite;
     }
 

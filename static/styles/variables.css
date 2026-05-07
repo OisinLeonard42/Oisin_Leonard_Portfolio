@@ -24,6 +24,7 @@
     --color-border: #746bf3;
     /* --color-surface: #f2f5f0; */
     --color-overlay: rgba(0, 0, 0, 0.25);
+   
 
     /* Interactive States */
     --color-border-hover: var(--color-accent);
