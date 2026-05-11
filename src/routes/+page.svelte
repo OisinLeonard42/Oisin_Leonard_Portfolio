@@ -7,7 +7,6 @@
     import { currentQuote, setRandomQuote } from '$lib/stores/quoteStore.js';
     
     let showQuoteModal = false;
-
     /**
      * Select a few featured items — e.g., first 4 items
 	 * @type {any[]}
@@ -24,7 +23,7 @@
 
 
 <svelte:head>
-    <title>Starter Kit</title>
+    <title>Oisin Leonard Portfolio Website</title>
 </svelte:head>
 
 <!-- Page Container -->
@@ -127,7 +126,7 @@
         padding: 0 var(--space-md);
         background-size: 200px;
         background-repeat: repeat;
-        background-color: rgba(255, 255, 255, 0.85);
+   
     }
 
     .featured h2 {

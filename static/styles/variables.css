@@ -1,6 +1,6 @@
 /* ==============================
    CSS Design Tokens
-   Theme: Mindful Living Starter Kit (Light)
+   Theme: Mindful Living Oisin Leonard Portfolio Website (Light)
    Aesthetic: Earth tones, elegance, clarity
 ============================== */
 
@@ -20,6 +20,7 @@
    
    
     background-image: url("/images/backgrounds/background.jpg");
+    background-size: 200% 100%;
     background-repeat: no-repeat;
     --color-border: #746bf3;
     /* --color-surface: #f2f5f0; */

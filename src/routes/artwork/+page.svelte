@@ -37,7 +37,7 @@
 
 
 <svelte:head>
-    <title>Artwork | Starter Kit</title>
+    <title>Artwork | Oisin Leonard Portfolio Website</title>
 </svelte:head>
 
 

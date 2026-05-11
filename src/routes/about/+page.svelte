@@ -34,7 +34,9 @@ I have had some work experience in computer repair as well as digital art.
     </p>
     <div class="grid">
         <figure>
-            <img src={asset("static/images/about/Oisίn Leonard CV Ballylynan.pdf")} />
+            <img src={asset("/images/about/C.V.1.png")} alt="hello" />
+              <img src={asset("/images/about/C.V.2.png")} alt="hello" />
+                <img src={asset("/images/about/C.V.3.png")} alt="hello" />
       
         </figure>
     </div>
@@ -71,7 +73,7 @@ I have had some work experience in computer repair as well as digital art.
 
     /* Section: Hero */
     .section-hero {
-       /* background-image: url("/images/backgrounds/bamboo-enso-hero.png");*/
+        background-image: url("/images/About/C.V.1.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -81,7 +83,7 @@ I have had some work experience in computer repair as well as digital art.
 
     /* Section: Gallery */
     .section-gallery {
-        /*background-image: url("/images/backgrounds/rice-texture.png");*/
+        background-image: url("/images/About/C.V.2.png");
         background-size: 800px;
         background-repeat: repeat;
         background-position: bottom center;
@@ -90,7 +92,7 @@ I have had some work experience in computer repair as well as digital art.
 
     /* Section: Quote or Reflection */
     .section-quote {
-		/*background-image: url("/images/backgrounds/zen-garden-ripples.png");*/
+		background-image: url("/images/About/C.V.3.png");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
