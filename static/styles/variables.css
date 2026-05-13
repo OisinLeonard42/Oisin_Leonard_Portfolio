@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
     --color-border: #746bf3;
     /* --color-surface: #f2f5f0; */
-    --color-overlay: rgba(0, 0, 0, 0.25);
+    --color-overlay: rgba(4, 4, 4, 0.25);
    
 
     /* Interactive States */
@@ -34,7 +34,7 @@
     /* Disabled State Styling */
     --button-disabled-bg: #ddd;
     --button-disabled-text: #888;
-    --button-disabled-border: #ccc;
+    --button-disabled-border: #0f0e0e;
 
     /* Gradient (for headers, accents, or transitions) */
     --gradient-brand: linear-gradient(

@@ -50,6 +50,7 @@
         width: 100%;
         gap: var(--space-lg);
         animation: fadeIn var(--transition-slow);
+         color: white;
     }
 
     .nav ul {

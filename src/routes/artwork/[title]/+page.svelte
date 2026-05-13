@@ -96,7 +96,7 @@
 		/*background-image: url('/images/backgrounds/kanji-grid.png');*/
         background-size: 200px;
         background-repeat: repeat;
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(7, 7, 7, 0.85);
 	}
 	
 	.detail-content {
@@ -162,7 +162,7 @@
 		/*background-image: url('/images/backgrounds/rice-texture.png');*/
         background-size: 800px;
         background-repeat: repeat;
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(6, 4, 4, 0.85);
 	}
 
 	.related h2 {

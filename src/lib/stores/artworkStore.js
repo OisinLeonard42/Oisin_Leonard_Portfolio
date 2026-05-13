@@ -1,3 +1,4 @@
+
 import { writable, derived } from 'svelte/store';
 
 /**
@@ -24,7 +25,7 @@ const initialArtwork= [
     {
         id: "3",
         title: "Artwork 3 3D Elevator",
-        description: "This Artwork was made for an art project where we had to make 3D models from the 4th year project. .",
+        description: "This Artwork was made for an art project where we had to make 3D models from the 4th year project.",
         tags: [],
         featured: false,
         image: "/images/artwork/elevator3D.png"

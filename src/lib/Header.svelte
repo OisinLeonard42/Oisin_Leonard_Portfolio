@@ -6,7 +6,6 @@
 
 <header class="header">
     <div class="logo-area">
-        <img src={asset("/logo.png")} alt="Starter Kit Logo" />
         <h1>Oisin Leonard Portfolio Website</h1>
     </div>
     <Navigation />
@@ -24,33 +23,9 @@
         border-bottom: var(--border-default);
         position: relative;
         z-index: 100;
+         color: rgb(7, 47, 223);
     }
 
-    .logo-area {
-        display: flex;
-        align-items: center;
-        gap: var(--space-sm);
-        font-family: var(--font-heading);
-    }
-
-    .logo-area img {
-        width: 96px;
-        height: auto;
-        border-radius: var(--radius-sm);
-        box-shadow: var(--shadow-sm);
-    }
-
-    .logo-area h1 {
-        margin: 0;
-        font-size: var(--font-xxl);
-        font-weight: 700;
-        background: var(--gradient-brand);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        line-height: 1;
-        animation: fadeInTitle 0.6s ease forwards;
-    }
 
     @keyframes fadeInTitle {
         from {
