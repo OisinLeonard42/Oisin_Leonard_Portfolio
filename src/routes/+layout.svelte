@@ -18,8 +18,6 @@
     <Footer />
 </div>
 
-
-
 <style>
     #layout-container {
         display: flex;

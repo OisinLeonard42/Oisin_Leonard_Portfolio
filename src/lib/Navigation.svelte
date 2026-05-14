@@ -41,6 +41,26 @@
     </ul>
 </nav>
 
+<!--
+Source - https://stackoverflow.com/q/14356956
+Posted by Priya Sunanthan
+Retrieved 2026-05-14, License - CC BY-SA 3.0
+-->
+
+<!--
+Source - https://stackoverflow.com/a/14357365
+Posted by Aioros
+Retrieved 2026-05-14, License - CC BY-SA 3.0
+-->
+<!--
+Source - https://stackoverflow.com/a/14357365
+Posted by Aioros
+Retrieved 2026-05-14, License - CC BY-SA 3.0
+-->
+ <audio autoplay loop>
+        <source src="Startup.mp3" type="audio/mpeg">
+    </audio>
+    
 
 <style>
     .nav {
@@ -174,4 +194,5 @@
         from { opacity: 0; transform: translateX(20px); }
         to { opacity: 1; transform: translateX(0); }
     }
+    
 </style>

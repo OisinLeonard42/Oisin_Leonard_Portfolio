@@ -56,7 +56,7 @@
                 </button>
             {/each}
         </div>
-        <a class="browse-link" href="{resolve('/artwork')}">Browse Full Portfolio →</a>
+       
     </section>
 
     <!-- About Teaser Section -->
