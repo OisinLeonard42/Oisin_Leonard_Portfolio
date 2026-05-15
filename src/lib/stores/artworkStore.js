@@ -89,7 +89,7 @@ const initialArtwork= [
     {
         id: "11",
         title: "Artwork 11 The Bus",
-        description: "The bus was one of the first projects that we had to put textures onto them.",
+        description: "The bus was one of the first projects that we had to put textures onto them sadly I wasn't able to finish it but I would love to go back and finish it one day.",
         tags: [],
         featured: false,
         image: "/images/artwork/Sample_bus.png"
