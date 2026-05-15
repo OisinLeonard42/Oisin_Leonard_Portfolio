@@ -30,8 +30,8 @@ Some of my work was used in a game project for the fourth years games to help th
     </p>
     <div class="grid">
         <figure>
-            <img src={asset("/images/about/C.V.1.png")} alt="hello" />
-              <img src={asset("/images/about/C.V.2.png")} alt="hello" />
+            <img src={asset("/images/about/C.V.1.png")} alt="he" />
+              <img src={asset("/images/about/C.V.2.png")} alt="hi" />
                 <img src={asset("/images/about/C.V.3.png")} alt="hello" />
       
         </figure>

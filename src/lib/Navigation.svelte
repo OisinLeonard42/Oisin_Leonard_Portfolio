@@ -57,10 +57,6 @@ Source - https://stackoverflow.com/a/14357365
 Posted by Aioros
 Retrieved 2026-05-14, License - CC BY-SA 3.0
 -->
- <audio autoplay loop>
-        <source src="Startup.mp3" type="audio/mpeg">
-    </audio>
-    
 
 <style>
     .nav {
