@@ -144,12 +144,5 @@
         gap: var(--space-lg);
         margin-bottom: var(--space-md);
     }
-
-    .browse-link {
-        display: block;
-        text-align: center;
-        color: white;
-        margin-top: var(--space-md);
-        font-weight: 500;
-    }   
+ 
 </style>
