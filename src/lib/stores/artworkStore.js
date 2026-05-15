@@ -97,7 +97,7 @@ const initialArtwork= [
     {
         id: "12",
         title: "Artwork 12 The test model",
-        description: "This image was made in a animation software called Source Filmaker I wanted to try and use different 3D moduel softwares to see what I can do.",
+        description: "This image was made in a animation software called Source Filmaker I wanted to try and use different 3D moduel softwares to see what I can do. I really enjoyed working in this software and would like to continue working on this software later on.",
         tags: [],
         featured: false,
         image: "/images/artwork/sfm_test.png"
