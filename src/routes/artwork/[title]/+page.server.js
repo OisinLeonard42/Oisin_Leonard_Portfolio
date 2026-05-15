@@ -1,20 +1,19 @@
 export async function entries() {
 	return [
-		{ title: "Morning Stretch Ritual" },
-		{ title: "Digital Declutter" },
-		{ title: "Evening Journaling" },
-		{ title: "Breath Awareness" },
-		{ title: "Nature Walks" },
-		{ title: "Weekly Reflection" },
-		{ title: "Obstacle Reframing" },
-		{ title: "One-Meal Fasting Practice" },
-		{ title: "Power Posture Drills" },
-		{ title: "Visualisation Ritual" },
-		{ title: "Cold Exposure Start" },
-		{ title: "The 5-Minute Mind Sweep" },
-		{ title: "Honor Code Exercise" },
-		{ title: "Gratitude Bow Practice" },
-		{ title: "Tea Ceremony Lite" }
+		{ title: "1" },
+		{ title: "2" },
+		{ title: "3" },
+		{ title: "4" },
+		{ title: "5" },
+		{ title: "6" },
+		{ title: "7" },
+		{ title: "8" },
+		{ title: "9" },
+		{ title: "10" },
+		{ title: "11" },
+		{ title: "12" },
+		{ title: "13" },
+		{ title: "14" },
 		// Add all valid artwork IDs here
 	];
 }
