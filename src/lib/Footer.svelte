@@ -1,6 +1,11 @@
+<script>
+	import { asset} from "$app/paths";
+
+</script>
 <footer class="footer">
-    <img src="/images/backgrounds/TaskBar.png" alt="Footer background" class="footer-image">
+    <img src={asset("/images/backgrounds/Taskbar.png")} alt="Footer background" class="footer-image">
 </footer>
+
 
 <style>
     .footer {
