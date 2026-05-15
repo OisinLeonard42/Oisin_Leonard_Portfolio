@@ -32,13 +32,13 @@
     <section class="hero">
         <h1>Welcome to Oisin Leonard Portfolio Page</h1>
         <p class="subheading">
-          This Portfolio Website will show you what I have made through my second semester of collage and it is also my final project for this semester.
+          This Portfolio Website will show you what I have made through my second semester of collage and it is also my final project for my second semester.
         </p>
     </section>
 
     <!-- Featured Catalogue Section -->
     <section class="featured">
-        <h2>Featured Practices</h2>
+        <h2>Featured Artworks</h2>
         <div class="card-grid">
             {#each featuredItems as item, index}
                 <button
@@ -90,6 +90,7 @@
         background-repeat: no-repeat;
         background-blend-mode: overlay;
         background-color: rgba(15, 10, 10, 0.75);
+    
     }
 
     .hero h1 {

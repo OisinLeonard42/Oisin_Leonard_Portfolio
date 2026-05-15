@@ -23,7 +23,7 @@
         border-bottom: var(--border-default);
         position: relative;
         z-index: 100;
-         color: rgb(7, 47, 223);
+         color: rgb(10, 30, 119);
     }
 
 

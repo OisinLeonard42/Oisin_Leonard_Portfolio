@@ -72,8 +72,6 @@ Retrieved 2026-05-14, License - CC BY-SA 3.0
         gap: var(--space-lg);
         animation: fadeIn var(--transition-slow);
          color: white;
-
-      
     }
 
     .nav ul {
