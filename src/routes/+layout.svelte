@@ -10,16 +10,6 @@
     <main id="main-content" tabindex="-1">
         <slot />
     </main>
-      <header>
-    <h1>
-        If you want to listen to music while going through the website click the play button.
-    </h1>
-        <audio autoplay loop controls>
-    <source src="/Startup.mp3" type="audio/mpeg" /><!--This is audio can play while you explore the website.-->
-    Your browser does not support the audio element.
-</audio>
-    </header>
-
     <!-- Footer -->
     <Footer />
 </div>
