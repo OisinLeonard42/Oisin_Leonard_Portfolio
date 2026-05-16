@@ -44,7 +44,6 @@
         min-height: 100%;
         width: 100%;
         /*background-image: url("/images/backgrounds/zen-enso-bg.png");*/
-          background-image: url("/images/backgrounds/background.jpg");
         background-repeat: repeat-y; /* or 'no-repeat' for full image */
         background-size: cover;      /* or 'contain' if you want it less aggressive */
         background-position: center top;
