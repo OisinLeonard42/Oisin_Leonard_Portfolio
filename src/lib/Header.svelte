@@ -24,6 +24,7 @@
         position: relative;
         z-index: 100;
          color: rgb(10, 30, 119);
+         background-image: url("/images/backgrounds/background.jpg");
     }
 
 
