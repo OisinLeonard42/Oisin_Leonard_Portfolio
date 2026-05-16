@@ -4,6 +4,7 @@
 	import { goto } from '$app/navigation';
 	import { artwork, categories, tags } from '$lib/stores';
 	import { ArtworkCard } from '$lib/components';
+    import { asset } from '$app/paths';
 
 	let search = '';
 	let selectedTag = 'all';

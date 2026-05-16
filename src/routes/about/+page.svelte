@@ -16,7 +16,7 @@
        This part of the website is about me and why I decided to design this website. And I have presented my C.V. below for people to see if they want to contact me for an intership or a job.
     </p>
      <p>
-      Completeing my four years of collage from my IDAD course.
+     My main goal is to Completeing my four years of collage from my IDAD course.
       </p>
 <p>
 Some of my work was used in a game project for the fourth years games to help them with there final project.
